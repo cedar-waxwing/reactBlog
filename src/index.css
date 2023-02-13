@@ -1,0 +1,48 @@
+html, body {
+    background-color: #000000;
+    height: 100vh;
+
+}
+
+html {
+    font-size: 233%;
+    float: center;
+}
+
+/* @font-face {
+    font-family: "ZnikomitNo24.otf";
+    src: local("ZnikomitNo24.otf"),
+    url("./fonts/ZnikomitNo24.otf") format("truetype");
+    font-weight: normal;
+} */
+
+.menu {
+    font-size: 150%;
+}
+
+/* .links {
+    color: #CBCB41 ;
+} */
+
+.uniqueTitle {
+    font-family: 'Faune', sans-serif;
+    color: #CBCB41;
+}
+
+.uniqueBody {
+    font-family: 'Faune', sans-serif;
+    font-weight: 100;
+}
+
+.header {
+    font-family: 'Faune', sans-serif;
+    color: #CBCB41;
+}
+
+.portfolioBody {
+    font-family: 'Faune', sans-serif;
+}
+
+.link-text {
+    font-family: 'Faune', sans-serif;
+}

@@ -1,47 +1,43 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './index.css'
+import React, { useState, useEffect } from 'react';
 // import "./fonts/ZnikomitNo24.otf"
 //import { render } from "@testing-library/react";
-import Header from "./Header"
-import Hero from "./Hero"
-import AboutPage from "./AboutPage"
-//import { Component } from "react";
+//import Header from "./Header"
+import Home from "./Home"
+import About from "./About"
+import OffCanvas from "./OffCanvas"
+import Portfolio from "./Portfolio"
+import Blog from "./Blog"
+import Contact from "./Contact"
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
-class App extends React.Component {
+function App() {
+  // let pages = [
+  //   { readableName: "Hero", url: "hero" },
+  //   { readableName: "About", url: "about" },
+  //   { readableName: "Blog", url: "blog" },
+  //   { readableName: "Portfolio", url: "portfolio" },
+  //   { readableName: "Contact", url: "contact" }
+  // ];
 
-  constructor() {
-    super();
-    this.pages = [
-      { readableName: "About", url: "about" },
-      { readableName: "Blog", url: "blog" },
-      { readableName: "Contact", url: "contact" }
-    ];
-    this.state = {
-      currentPage: 0
-    }
-    this.setPage = this.setPage.bind(this)
-  }
+  // const [currentPage, setCurrentPage] = useState(0)
 
-  setPage(newPageNum) {
-    this.setState({ currentPage: newPageNum })
-  }
-
-  // componantDidMount(){
-  //   console.log(name)
-
-  //   if (name) {
-
-  //   } else {
-  //     let name = window.localStorage.setItem("name", "Rachel")
-  //   }
+  //class
+  //   const setPage = (newPageNum) => {
+  //   setCurrentPage(newPageNum)
   // }
 
-    
+  //class
+  //this.setState({currentPage: newPageNum })
 
-  render() {
-    return (
-      <div className="App container text-light">
+  return (
+    <div className="App container text-light">
+      <Router>
+        {/* <a className="btn btn-transparent text-light col-1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ color: "#FFFFFF", fontFamily: "faune", fontStyle: "italic"}}>
+        Menu
+</a> */}
+
+        <span className="btn navbar-toggler-icon bg-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" ></span>
+        <OffCanvas />
         {/* <Header
           pages={this.pages}
           currentPage={this.state.currentPage}
@@ -52,13 +48,28 @@ class App extends React.Component {
         <div>&nbsp;</div>
         <div>&nbsp;</div> */}
         <div>&nbsp;</div>
-        {/* <Hero /> */}
-        <AboutPage />
-        
-      </div>
-      
-    );
-  }
+
+        <Switch>
+          <Route exact={true} path="/About">
+            <About />
+          </Route>
+          <Route exact={true} path="/Home">
+            <Home />
+          </Route>
+          <Route exact={true} path="/">
+            <Home />
+          </Route>
+          <Route exact={true} path="/Portfolio">
+            <Portfolio />
+          </Route>
+          <Route>
+            <Contact />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+
+  );
 }
 
 export default App;

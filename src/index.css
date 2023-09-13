@@ -1,12 +1,12 @@
-html, body {
-    background-color: #000000;
-    height: 100vh;
-
+html,
+body {
+  background-color: #000000;
+  height: 100vh;
 }
 
 html {
-    font-size: 233%;
-    float: center;
+  font-size: 233%;
+  float: center;
 }
 
 /* @font-face {
@@ -17,7 +17,7 @@ html {
 } */
 
 .menu {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 /* .links {
@@ -25,24 +25,57 @@ html {
 } */
 
 .uniqueTitle {
-    font-family: 'Faune', sans-serif;
-    color: #CBCB41;
+  font-family: "Faune", sans-serif;
+  color: #cbcb41;
 }
 
 .uniqueBody {
-    font-family: 'Faune', sans-serif;
-    font-weight: 100;
+  font-family: "Faune", sans-serif;
+  font-weight: 100;
 }
 
 .header {
-    font-family: 'Faune', sans-serif;
-    color: #CBCB41;
+  font-family: "Faune", sans-serif;
+  color: #cbcb41;
 }
 
 .portfolioBody {
-    font-family: 'Faune', sans-serif;
+  font-family: "Faune", sans-serif;
 }
 
 .link-text {
-    font-family: 'Faune', sans-serif;
+  font-family: "Faune", sans-serif;
 }
+
+.bg-video {
+  width: "100%";
+  height: "100%";
+  margin: 0;
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  position: relative;
+  font-family: "Faune", sans-serif;
+  color: #cd2912;
+  text-align: end;
+  font-weight: bold;
+}
+
+.subtitle {
+  position: relative;
+  color: "#CBCB41";
+  text-align: end;
+  font-family: "Faune";
+  font-style: italic;
+}
+
+.bigmenu {
+  position: relative;
+  background-color: #cd2912;
+  text-align: end;
+}
+

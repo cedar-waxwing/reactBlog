@@ -5,8 +5,6 @@ import React, { useState, useEffect } from 'react';
 import Home from "./Home"
 import About from "./About"
 import OffCanvas from "./OffCanvas"
-import Portfolio from "./Portfolio"
-import Blog from "./Blog"
 import Contact from "./Contact"
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
@@ -14,8 +12,6 @@ function App() {
   // let pages = [
   //   { readableName: "Hero", url: "hero" },
   //   { readableName: "About", url: "about" },
-  //   { readableName: "Blog", url: "blog" },
-  //   { readableName: "Portfolio", url: "portfolio" },
   //   { readableName: "Contact", url: "contact" }
   // ];
 
@@ -36,7 +32,7 @@ function App() {
         Menu
 </a> */}
 
-        <span className="btn navbar-toggler-icon bg-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" ></span>
+        <span className="btn-lg rounded-circle navbar-toggler-icon bigmenu z-3 mt-2 me-2" id="myOffcanvas" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" ></span>
         <OffCanvas />
         {/* <Header
           pages={this.pages}
@@ -58,9 +54,6 @@ function App() {
           </Route>
           <Route exact={true} path="/">
             <Home />
-          </Route>
-          <Route exact={true} path="/Portfolio">
-            <Portfolio />
           </Route>
           <Route>
             <Contact />

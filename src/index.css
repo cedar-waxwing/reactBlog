@@ -63,7 +63,18 @@ html {
   color: #cd2912;
   text-align: center;
   font-weight: bold;
+  line-height: 80px;
+  padding: 0em 0.1em 0.15em 0.1em;
   top: 80%;
+  /* background-color: hsla(80, 7%, 93%, 0.1); */
+  /* background-color: hsla(0, 0%, 0%, 0.7); */
+  box-shadow: inset 5px 5px 40px 40px rgba(235, 236, 233, 0.7),
+    5px 5px 30px 30px rgba(235, 236, 233, 0.7);
+}
+
+.heroCol {
+  float: none;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -83,6 +94,23 @@ html {
 .propic {
   /* position: relative; */
   /* width: 500px; */
-  height: 20%;
+  height: 500px;
   /* border-radius: 50% */
+}
+
+.About {
+  margin-left: 45px;
+  color: #cd2912;
+  text-align: left;
+  font-family: "Faune";
+  font-weight: bold;
+  font-style: italic;
+}
+.AboutBody {
+  margin-left: 40px;
+}
+
+.spotifyNotif {
+  margin-top: 30px;
+  text-align: start;
 }

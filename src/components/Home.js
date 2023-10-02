@@ -19,11 +19,11 @@ const Home = () => {
           <source src={mainfieldvideo} type="video/mp4" />
           Your browser does not support this video.
         </video>
-        <div className="col-12">
+        <div className="col-7 heroCol">
           <h1
             className="hero"
           >
-            Rachel <i>W.</i> Cheng
+            Rachel <i>W.</i> Ehlers
           </h1>
         </div>
       </div>
